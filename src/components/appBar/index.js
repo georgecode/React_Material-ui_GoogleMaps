@@ -3,7 +3,7 @@ import AppBar from 'material-ui/AppBar';
 import IconButton from 'material-ui/IconButton';
 import NavigationClose from 'material-ui/svg-icons/navigation/close';
 import Menu from 'material-ui/svg-icons/navigation/menu';
-import Test from '../appBarDropDown';
+import Hamburger from '../appBarDropDown';
 
 
 function alertHello() {
@@ -15,10 +15,10 @@ const Navbar = () => (
       <AppBar
       	title= "stuff"
       	iconElementRight={<IconButton><NavigationClose /></IconButton>}
-      	iconElementLeft ={<IconButton><Menu /></IconButton>}
+      	iconElementLeft ={<Hamburger />}
       	onLeftIconButtonTouchTap={alertHello}
       />
-      <Test />
+      
     </div>     
 );
 
