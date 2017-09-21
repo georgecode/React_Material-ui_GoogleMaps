@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import RaisedButton from 'material-ui/RaisedButton';
-// import AppBarExampleIcon from './components/navBar/navBar'
-import logo from './logo.svg';
+import Navbar from './components/appBar'
 import './App.css';
 // import AppBarExampleIcon from './components/navBar/navBar'
 
@@ -14,14 +13,16 @@ class App extends Component {
   render() {
     return (
       <MuiThemeProvider>
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
+      <div>
+        <Navbar />
+
+
+      
+     {/* 
 
         <RaisedButton label="Material UI Button" />
-
+        <AppBarExampleIcon />
+      </div> */}
       </div>
       </MuiThemeProvider>
 
