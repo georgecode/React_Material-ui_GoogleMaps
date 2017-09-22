@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import RaisedButton from 'material-ui/RaisedButton';
-import Navbar from './components/appBar'
+import Navbar from './components/appBar';
 import './App.css';
+import Mapcontainer from './components/map';
+
+// import GoogleApiWrapper from './components/map2';
+
 // import AppBarExampleIcon from './components/navBar/navBar'
 
 
@@ -16,8 +20,9 @@ class App extends Component {
       <MuiThemeProvider>
       <div>
         <Navbar />
+        <Mapcontainer />
 
-
+        
       
      {/* 
 
